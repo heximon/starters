@@ -1,5 +1,11 @@
-# pnpm refuses to run a dependency's install script until you approve it. `drizzle-kit` installs
-# esbuild, and esbuild's install script links the binary for your platform. Without this approval
-# `pnpm install` stops with ERR_PNPM_IGNORED_BUILDS.
+# pnpm runs no dependency install script until you decide it here. An undecided script stops the
+# install with ERR_PNPM_IGNORED_BUILDS. These are the scripts a Heximon app pulls in today.
 allowBuilds:
+  # Links the esbuild binary for your platform. The build tools need it.
   esbuild: true
+  # A SQLite driver this app does not use. Set it to true when you switch @heximon/drizzle to it.
+  better-sqlite3: false
+  # Its script only prints a notice.
+  protobufjs: false
+  # The Cloudflare local runtime. Set it to true when you deploy to Cloudflare.
+  workerd: false
