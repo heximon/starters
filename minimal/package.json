@@ -1,0 +1,28 @@
+{
+  "name": "my-heximon-app",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vp dev",
+    "build": "vp build",
+    "check": "heximon check && vp check",
+    "test": "vitest --run"
+  },
+  "dependencies": {
+    "@heximon/http": "^0.1.0",
+    "@heximon/runtime": "^0.1.0"
+  },
+  "devDependencies": {
+    "@heximon/build": "^0.1.0",
+    "@types/node": "^24.13.3",
+    "@typescript/native-preview": "^7.0.0-dev.20260707.2",
+    "heximon": "^0.1.0",
+    "typescript": "^6.0.3",
+    "vite-plus": "^0.3.0",
+    "vitest": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}

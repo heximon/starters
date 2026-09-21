@@ -1,0 +1,5 @@
+# pnpm refuses to run a dependency's install script until you approve it. `drizzle-kit` installs
+# esbuild, and esbuild's install script links the binary for your platform. Without this approval
+# `pnpm install` stops with ERR_PNPM_IGNORED_BUILDS.
+allowBuilds:
+  esbuild: true
