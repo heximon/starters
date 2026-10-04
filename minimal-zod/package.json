@@ -13,16 +13,16 @@
     "@heximon/http": "^0.1.0",
     "@heximon/runtime": "^0.1.0",
     "@heximon/schema": "^0.1.0",
-    "zod": "^4.5.4"
+    "zod": "^4.6.5"
   },
   "devDependencies": {
     "@heximon/build": "^0.1.0",
-    "@types/node": "^24.13.3",
+    "@types/node": "^24.19.0",
     "@typescript/native-preview": "^7.0.0-dev.20260707.2",
     "heximon": "^0.1.0",
     "typescript": "^6.0.3",
-    "vite-plus": "^0.3.0",
-    "vitest": "^5.0.0"
+    "vite-plus": "^1.0.0",
+    "vitest": "5.0.1"
   },
   "engines": {
     "node": ">=24"
